@@ -5,7 +5,7 @@
 
   vars_prompt:
   - name: "password"
-    prompt: "password for maverick"
+    prompt: "password for pawel"
     private: true
     encrypt: "md5_crypt"
     confirm: yes
@@ -14,26 +14,26 @@
   tasks:
   - name: adding user
     user:
-      name: "maverick"
+      name: "pawel"
       shell: /bin/bash
       password: "{{password}}"
       groups: "{{nginx.user}},rvm,docker,staff,sudo"
 
   - name: add ssh key
     authorized_key:
-      user: "maverick"
-      key: "https://github.com/maverick9000.keys"
+      user: "pawel"
+      key: "https://github.com/consolepawel.keys"
 
   - name: add to admin user group
     user:
-      name: "maverick"
+      name: "pawel"
       groups: admin
       append: true
     when: ansible_distribution == 'Ubuntu'
 
   - name: add to sudo user group
     user:
-      name: "maverick"
+      name: "pawel"
       groups: sudo
       append: true
     when: ansible_distribution == 'Debian'

@@ -7,14 +7,14 @@
 
   - name: add to admin user group
     user:
-      name: "maverick"
+      name: "pawel"
       groups: admin,rvm,www-data
       append: true
     when: ansible_distribution == 'Ubuntu'
 
   - name: add to sudo user group
     user:
-      name: "maverick"
+      name: "pawel"
       groups: sudo,rvm,www-data
       append: true
     when: ansible_distribution == 'Debian'

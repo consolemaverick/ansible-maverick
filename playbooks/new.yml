@@ -1,7 +1,7 @@
 - import_playbook: "../plays/housekeeping/update_cache.yml"
 - import_playbook: "../plays/housekeeping/upgrade.yml"
 - import_playbook: "../plays/user/groups.yml"
-- import_playbook: "../plays/user/user_maverick_groups.yml"
+- import_playbook: "../plays/user/user_pawel_groups.yml"
 - import_playbook: "../plays/user/devops_crew.yml"
 - import_playbook: "../plays/housekeeping/hostname.yml"
 - import_playbook: "../plays/housekeeping/fix_tmp.yml"

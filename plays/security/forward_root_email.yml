@@ -27,5 +27,5 @@
       state: present
       create: true
 
-  - name: send test email to maverick@consolemaverick.com
-    command: echo test | mail -s test maverick@consolemaverick.com
+  - name: send test email to pawel@consolemaverick.com
+    command: echo test | mail -s test pawel@consolemaverick.com
